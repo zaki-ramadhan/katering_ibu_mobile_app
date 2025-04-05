@@ -1,0 +1,37 @@
+# === Laravel Ignore ===
+/katering_ibu_m_laravel/vendor/
+/katering_ibu_m_laravel/node_modules/
+.env
+.env.*  # ignore .env.testing, dll
+Homestead.yaml
+Homestead.json
+.phpunit.result.cache
+/storage/*.key
+/public/storage
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/katering_ibu_m_laravel/public/hot
+/katering_ibu_m_laravel/public/storage
+
+# === Flutter Ignore ===
+/katering_ibu_m_flutter/.dart_tool/
+/katering_ibu_m_flutter/.idea/
+/katering_ibu_m_flutter/.packages
+/katering_ibu_m_flutter/.flutter-plugins
+/katering_ibu_m_flutter/.flutter-plugins-dependencies
+/katering_ibu_m_flutter/.metadata
+/katering_ibu_m_flutter/build/
+/katering_ibu_m_flutter/ios/Flutter/Flutter.framework
+/katering_ibu_m_flutter/ios/Flutter/Flutter.podspec
+/katering_ibu_m_flutter/ios/ServiceDefinitions.json
+/katering_ibu_m_flutter/ios/Runner.xcworkspace/
+/katering_ibu_m_flutter/android/.gradle/
+/katering_ibu_m_flutter/android/app/build/
+/katering_ibu_m_flutter/pubspec.lock
+
+# === Global ===
+*.log
+.DS_Store
+Thumbs.db
