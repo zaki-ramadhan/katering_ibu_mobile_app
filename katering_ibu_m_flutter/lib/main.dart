@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
-// import 'pages/login_page.dart'; // Halaman login
-import 'pages/users_page.dart'; // Halaman utama
+import 'screens/login_screen.dart';
+import 'screens/sign_up_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Laravel API Integration',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      initialRoute: '/users', // Route awal aplikasi
+      debugShowCheckedModeBanner: false,
+      title: 'Katering Ibu',
+      theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Roboto'),
+      initialRoute: '/',
       routes: {
-        // '/login': (context) => LoginPage(), // Halaman login
-        '/users': (context) => UsersPage(), // Halaman utama
+        '/': (context) => const LoginScreen(),
+        '/signup': (context) => const SignUpScreen(),
       },
     );
   }
